@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+    <!--  Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha256-aAr2Zpq8MZ+YA/D6JtRD3xtrwpEz2IqOS+pWD/7XKIw=" crossorigin="anonymous" /> 
+    <!-- Font awesome -->      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha256-c+C87jupO1otD1I5uyxV68WmSLCqtIoNlcHLXtzLCT0=" crossorigin="anonymous" />
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="home.component.css" type="text/css" />
+    <link rel="stylesheet" href="home.component.css" type="text/css" />
+</head>
+
+<body>   
+    <!-- Introduction and access to resume, contact, interests, GitHub Repo & personal cv -->
+    <header class="container-fluid">
+        <div class="row">
+            <a class="col-md-4 logo" href="index.html"></a>
+            
+            <div class="col-md-8">
+                <div class="row bg-color-name-title">
+                    <div class="heading">
+                        <h1 class="name"> {{nombre}} </h1>
+                        <h2 class="title">Future Web Developer</h2>
+                        <h2 class="title">EX Mechanical Designer Engineer</h2>
+                    </div>
+                </div>
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
+                        <div Class="col-lg-2 ul-menu-color-Home menuitem">
+                            <a routerLink="home" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                        </div>
+                        <div Class="col-lg-2 ul-menu-color-Resume menuitem">
+                            <a routerLink="cv" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Lebenslauf</span></a>
+                        </div>
+                        <div Class="col-lg-2 ul-menu-color-Contact menuitem">
+                            <a routerLink="contact" class="hvr-sweep-to-bottom"><i class="far fa-comment" aria-hidden="true"></i><span>Kontact</span></a>
+                        </div>
+                        <div Class="col-lg-2 ul-menu-color-Interests menuitem">
+                            <a routerLink="int" class="hvr-sweep-to-bottom"><i class="fa fa-cog" aria-hidden="true"></i><span>Interesse</span></a>
+                        </div>
+                        <div Class="col-lg-2 ul-menu-color-GitHub menuitem">
+                            <a routerLink="github" class="hvr-sweep-to-bottom"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                        </div>
+                        <div Class="col-lg-2 ul-menu-color-DownloadCV menuitem">
+                            <a href="assets/HugoMartinMendenz_Lebenslauf.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Lebenslauf<br>herunterladen</span></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+    
+    <!-- Personal Information -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-color-personal-info">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase">Personal Info</h3>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">Name:</p>
+                    </div>
+                    <div class="value">
+                        <p>{{nombre}}</p>
+                    </div>
+                </div>
+
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">Address:</p>
+                    </div>
+                    <div class="value">
+                        <p>Rosensteinstr. 111, 70191 Stuttgart</p>
+                    </div>
+                </div>
+
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">Contact Number:</p>
+                    </div>
+                    <div class="value">
+                        <p>+49 157/334 67758</p>
+                    </div>
+                </div>
+
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">Email:</p>
+                    </div>
+                    <div class="value">
+                        <p>hugomartin.menz@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 bg-color-three-reasons">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase">Über mich</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-2">
+                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Warum EX Maschinenbauer?</h4>
+                                <p class="certified">
+                                    Manchmal muss man die Richtung ändern und auf dem fahrenden Zug aufzuspringen.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-2">
+                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Wie ich arbeite?</h4>
+                                <p class="dark-how">
+                                    Von meiner Erfahrung als Projektleiter, ich versuche alles was ich geben kann, um die Projekte zum Abschluss zu bringen.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-2">
+                                <i class="three-reasons-icon fas fa-eye" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Warum ich?</h4>
+                                <p class="dark-why">
+                                    Ich bin auch durchaus motiviert, mich umfassend und selbstständig in den neuen Bereich einzuarbeiten und auch außerhalb der Arbeitszeit an Schulungen und Weiterbildungens teilzunehmen, um professionelle Arbeit zu leisten.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row px-5 py-5">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <h5 class="uppercase general-sub">über mich</h5>
+                <p class="inline-block full-stack">
+                    Ex Projektleiter in der Automatisierungstechnik, neu in der Web Entwicklung aber hochmotiviert denn ich den Sprung gemacht habe.
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <h5 class="uppercase general-sub">Lebenslauf</h5>
+                <p class="inline-block">
+                    Lebenslauf herunterladen
+                    <a href="#" target="_blank" class="cv-pdf"><i class="fa fa-download" aria-hidden="true"></i></a>
+                </p>
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <h5 class="uppercase general-sub">MySocial</h5>
+                <ul class="list-group list-group-horizontal social-links">
+                    <li class="pr-2"><a href="https://www.linkedin.com/in/hugomartin-menz/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/hugomenz" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+            <div class="pt-1 pb-2 col-12 text-center lower-footer">
+                <small>{{nombre}} | <span id="fullstack-years"></span> | Future Web Developer</small>
+            </div>
+
+    </footer>
+
+JS Library for Bootstrap 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>
